@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mesa de Ayuda</title>
+</head>
+<body>
+    <h2>Crear Ticket de Soporte</h2>
+    <form action="procesar.php" method="POST">
+        <label>Tu Nombre:</label><br>
+        <input type="text" name="nombre" required><br><br>
+
+        <label>Tu Correo Electrónico:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Tipo de Problema:</label><br>
+        <select name="tipo" required>
+            <option value="Fallo de Software">Fallo de Software</option>
+            <option value="Problema de Hardware">Problema de Hardware</option>
+            <option value="Red e Internet">Red e Internet</option>
+            <option value="Otro">Otro</option>
+        </select><br><br>
+
+        <label>Descripción del Problema:</label><br>
+        <textarea name="descripcion" rows="5" cols="40" required></textarea><br><br>
+
+        <button type="submit">Enviar Ticket</button>
+    </form>
+</body>
+</html>
